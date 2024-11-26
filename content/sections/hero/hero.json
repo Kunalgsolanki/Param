@@ -1,7 +1,7 @@
 {
-  "intro": "Hej",
+  "intro": "Hello",
   "heroPhoto": {
-    "src": "../../images/lego-dummy.png",
+    "src": "https://cdn.sanity.io/images/csyyf8ew/production/25c1488ab1f9a1d183cdf7a473bfb17a282d7010-800x800.jpg",
     "alt": "My Photo"
   },
   "image": {

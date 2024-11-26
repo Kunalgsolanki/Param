@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
-    {
+    'gatsby-plugin-postcss',
+    { 
       resolve: "gatsby-theme-portfolio-minimal",
       options: {
         siteUrl: "https://gatsby-starter-portfolio-minimal-theme.netlify.app/", // Used for sitemap generation
@@ -25,5 +26,17 @@ module.exports = {
         // }
       },
     },
+    'gatsby-plugin-image',
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: `csyyf8ew`, // Found in Sanity's dashboard
+        dataset: `production`, // Default is 'production'
+        token: "skUu0sSxac8DZVjQQ3v3Hi02yCLqVMslwwAzceGjHtlBlk5IOxrUWx2oj67ZHFuBfnqDl1q14g1eqMzgUrwMJAV21zO7zc4ufN3O27FcG3uMqUjw7CdRMi5jGokjWHR7ugtqyPXWwd9DA6hL2vDplGwgbUgIGTBUM9iVYUgkpBeNB8In9zHR", // Optional, for private datasets
+        watchMode: true, // Optional, for development
+        overlayDrafts: true, // Optional, for development
+      },
+    },
+
   ],
 };

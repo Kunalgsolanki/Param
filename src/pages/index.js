@@ -9,13 +9,15 @@ import {
   ProjectsSection,
   Seo,
 } from "gatsby-theme-portfolio-minimal";
-
+import ResearchPaperList from "../components/ResearchPaperList";
+import { graphql, useStaticQuery } from "gatsby";
 export default function IndexPage() {
   return (
     <>
       <Seo title="Gatsby Starter for Portfolio Minimal" />
       <Page useSplashScreenAnimation>
         <HeroSection sectionId="hero" />
+        <ResearchPaperList/>
         <ArticlesSection sectionId="articles" heading="Latest Articles" sources={['Medium']} />
         <AboutSection sectionId="about" heading="About Portfolio Minimal" />
         <InterestsSection sectionId="details" heading="Details" />
